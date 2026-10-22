@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosque de los Cien Acres - Galería</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff4d6;
+            color: #4b2e16;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #f6c453;
+            padding: 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            color: #b52b20;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #7d1d17;
+            font-weight: bold;
+            font-size: 19px;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: #b52b20;
+            font-weight: bold;
+            padding: 10px 22px;
+            border-radius: 25px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #7d1d17;
+        }
+
+        .card {
+            background-color: white;
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            max-width: 1050px;
+            margin: 40px auto;
+        }
+
+        .card h2 {
+            color: #b52b20;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 3px solid #f6c453;
+            padding-bottom: 10px;
+        }
+
+        .card > p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .galeria-item {
+            background-color: #fff0b8;
+            border: 2px solid #f6c453;
+            border-radius: 15px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .galeria-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .galeria-item h3 {
+            color: #b52b20;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #b52b20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    
+    img, video { max-width: 100%; }
+    @media (max-width: 600px) {
+        header h1 { font-size: 28px; }
+        header { padding: 18px 12px; }
+        .card { padding: 20px; margin: 20px auto; }
+        .card h2, .descripcion-personaje h2 { font-size: 24px; }
+        nav { gap: 8px; }
+        nav a { padding: 8px 14px; }
+        .seccion-destacada, .descripcion-personaje { padding: 18px; }
+        .galeria-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Bosque de los Cien Acres</h1>
+        <p>Winnie Pooh y sus Amigos</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="aventuras.html">Aventuras</a>
+            <a href="galeria.html">Galería</a>
+        </nav>
+    </header>
+
+    <section id="galeria">
+        <div class="card">
+            <h2>Galería</h2>
+            <p>Conoce los momentos y personajes especiales del bosque.</p>
+
+            <div class="galeria-grid">
+                 <div class="galeria-item">
+                    <img src="galeria/winnie.jpg" alt="Winnie Pooh">
+                    <h3>Winnie Pooh</h3>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="galeria/buho.jpg" alt="Búho">
+                    <h3>Búho</h3>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="galeria/bosque.jpg" alt="Bosque">
+                    <h3>Bosque</h3>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="galeria/christopher.jpg" alt="Christopher Robin">
+                    <h3>Christopher Robin</h3>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="galeria/miel.jpg" alt="Miel">
+                    <h3>Miel</h3>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="galeria/lumpy.jpg" alt="Lumpy">
+                    <h3>Lumpy</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Winnie Pooh y sus Amigos - Yetzali Pérez Martínez</p>
+    </footer>
+
+</body>
+</html>

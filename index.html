@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bosque de los Cien Acres - Inicio</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fff4d6;
+        color: #4b2e16;
+        line-height: 1.8;
+    }
+    
+    /* ENCABEZADO CENTRADO AL MEDIO */
+    header {
+        background-color: #f6c453;
+        padding: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    
+    header h1 {
+        color: #b52b20;
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        color: #7d1d17;
+        font-weight: bold;
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+    
+    /* MENÚ CENTRADO AL MEDIO */
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        background-color: #b52b20;
+        font-weight: bold;
+        padding: 10px 22px;
+        border-radius: 25px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    nav a:hover {
+        background-color: #7d1d17;
+        transform: translateY(-2px);
+    }
+    
+    .card {
+        background-color: white;
+        padding: 45px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        max-width: 1050px;
+        margin: 40px auto;
+    }
+
+    .card h2 {
+        color: #b52b20;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        border-bottom: 3px solid #f6c453;
+        padding-bottom: 10px;
+    }
+
+    .bienvenida-texto {
+        font-size: 19px;
+        text-align: center;
+        margin-bottom: 35px;
+        color: #5c3a21;
+        font-style: italic;
+    }
+
+    /* ESTILOS PARA ACOMODAR LA IMAGEN ARRIBA Y CENTRADA */
+    .seccion-destacada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin: 30px 0;
+        background-color: #fffaf0;
+        padding: 30px;
+        border-radius: 15px;
+        border: 2px solid #f6c453;
+    }
+
+    .seccion-destacada img {
+        width: 350px;
+        max-width: 90%;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(34, 30, 30, 0.89);
+        display: block;
+        margin: 0 auto;
+    }
+
+    h3 {
+        color: #b52b20;
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 17px;
+        text-align: justify;
+        margin-bottom: 15px;
+        color: #4b2e16;
+    }
+
+    .bloque-valores {
+        background-color: #fff0b8;
+        padding: 25px;
+        border-radius: 15px;
+        margin-top: 30px;
+        border-left: 6px solid #b52b20;
+    }
+
+    .bloque-valores ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .bloque-valores li {
+        font-size: 17px;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 25px;
+        text-align: left;
+    }
+
+    .bloque-valores li::before {
+        content: "🍯";
+        position: absolute;
+        left: 0;
+    }
+
+    footer {
+        background-color: #b52b20;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    img, video { max-width: 100%; }
+    @media (max-width: 600px) {
+        header h1 { font-size: 28px; }
+        header { padding: 18px 12px; }
+        .card { padding: 20px; margin: 20px auto; }
+        .card h2, .descripcion-personaje h2 { font-size: 24px; }
+        nav { gap: 8px; }
+        nav a { padding: 8px 14px; }
+        .seccion-destacada, .descripcion-personaje { padding: 18px; }
+        .galeria-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Bosque de los Cien Acres</h1>
+    <p>Winnie Pooh y sus Amigos</p>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="aventuras.html">Aventuras</a>
+        <a href="galeria.html">Galería</a>
+    </nav>
+</header>
+
+<div class="card">
+    <h2>Bienvenidos al Bosque de los Cien Acres</h2>
+    <p class="bienvenida-texto">
+        ¡Bienvenidos a mi página web sobre Winnie Pooh y sus amigos! Aquí podrán conocer un poco más sobre sus personajes, aventuras y algunos de sus momentos más especiales.
+    </p>
+
+    <div class="seccion-destacada">
+        <img src="personajes/winnie 2.jpg" alt="Winnie 2">
+        
+        <div>
+            <h3> ¿Quién es Winnie Pooh y sus amigos?</h3>
+            <p>
+                Winnie Pooh es un tierno oso de peluche relleno de algodón, conocido mundialmente por su dulce personalidad, su voz suave y su insaciable amor por la miel. A su lado se encuentran entrañables compañeros como el alegre Tigger, el tierno y tímido Piglet, el melancólico Ígor y el pequeño Rito. Juntos forman una familia muy especial en el Bosque de los Cien Acres.
+            </p>
+        </div>
+    </div>
+
+    <h3> La Historia Detrás de la Leyenda</h3>
+    <p>
+        La historia de Winnie Pooh fue creada originalmente por el escritor británico <strong>A. A. Milne</strong> en la década de 1920. Milne se inspiró en los juguetes de peluche reales de su hijo, el pequeño <strong>Christopher Robin Milne</strong>, para dar vida a personajes tan icónicos como Pooh, Piglet, Tigger, Ígor y los demás habitantes del bosque.
+    </p>
+    <p>
+        El nombre "Winnie" provenía de una famosa osa negra canadiense llamada <em>Winnipeg</em> que vivía en el Zoológico de Londres, mientras que "Pooh" era el nombre de un cisne que Christopher conoció durante unas vacaciones. Años más tarde, Walt Disney adquirió los derechos para adaptar estas bellas historias en cortometrajes y películas animadas, convirtiendo a estos personajes en símbolos universales de la infancia.
+    </p>
+
+    <h3> El Bosque de los Cien Acres</h3>
+    <p>
+        El Bosque de los Cien Acres está inspirado en el bosque real de Ashdown, ubicado en East Sussex, Inglaterra. En las historias, este lugar es un verdadero refugio mágico donde la imaginación no tiene límites y los problemas del mundo adulto no existen.
+    </p>
+    <p>
+        En sus senderos, los árboles gigantes guardan refugios cálidos, los arroyos son perfectos para jugar a las carreritas de palitos ("Poohsticks") y cada rincón está preparado para una nueva aventura organizada por sus entrañables protagonistas.
+    </p>
+
+    <div class="bloque-valores">
+        <h3>💛 Lecciones y Valores que Nos Enseña</h3>
+        <p>A lo largo de sus historias, este grupo nos ha regalado enseñanzas duraderas sobre el verdadero significado de la vida:</p>
+        <ul>
+            <li><strong>La Verdadera Amistad:</strong> Estar presente para los demás sin importar las circunstancias, tal como Pooh acompaña siempre a Piglet o Ígor.</li>
+            <li><strong>Aceptar a los Demás:</strong> Cada personaje del bosque tiene una personalidad completamente distinta, pero todos se respetan y se quieren tal como son.</li>
+            <li><strong>La Belleza de lo Simple:</strong> Disfrutar de un paseo, una tarde soleada o un tarrito de miel nos enseña a valorar los pequeños detalles cotidianos.</li>
+            <li><strong>Valentía Incondicional:</strong> Como decía Christopher Robin: <em>"Eres más valiente de lo que crees, más fuerte de lo que pareces y más listo de lo que piensas"</em>.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+                 <p>© 2026 Winnie Pooh y sus Amigos - Yetzali Pérez Martínez</p>
+</footer>
+
+</body>
+</html>
